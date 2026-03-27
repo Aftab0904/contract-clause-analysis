@@ -10,3 +10,6 @@ def chunk_documents(docs):
     chunks = splitter.split_documents(docs)
 
     return chunks
+
+
+# chunks

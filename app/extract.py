@@ -38,3 +38,7 @@ Context:
     response = llm.invoke(prompt)
 
     return response.content
+
+
+
+# clases extraction

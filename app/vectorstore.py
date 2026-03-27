@@ -13,3 +13,6 @@ def create_vectorstore(chunks):
     )
 
     return vectorstore
+
+
+# stored into vector data bases

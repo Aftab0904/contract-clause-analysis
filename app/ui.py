@@ -102,3 +102,5 @@ Return concise risks.
 
         st.subheader("Risk Analysis")
         st.write(response.content)
+
+st.markdown("#AI-powered contract analysis system")
