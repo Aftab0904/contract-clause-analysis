@@ -55,7 +55,7 @@ Streamlit UI (ui.py)
 
 ### 1. Clone the repository
 
-git clone https://github.com/your-username/contract-ai-engine.git  
+git clone https://github.com/Aftab0904/contract-clause-analysis.git
 cd contract-ai-engine  
 
 
