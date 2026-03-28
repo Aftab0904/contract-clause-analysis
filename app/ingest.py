@@ -14,12 +14,17 @@ def convert_to_documents(dataset, limit=5):
 
     docs = []
 
-    for contract in dataset[:limit]:
+
+    for i, contract in enumerate(dataset[:limit]):
         paragraphs = contract["paragraphs"]
 
-        for para in paragraphs:
+        for j, para in enumerate(paragraphs):
             text = para["context"]
-
-            docs.append(Document(page_content=text))
+            docs.append(
+                Document(
+                    page_content=text,
+                    metadata={"source": f"Contract_{i}", "paragraph": j}
+                )
+            )
 
     return docs

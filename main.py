@@ -5,7 +5,7 @@ from app.chunk import chunk_documents
 data = load_cuad_dataset("data/contracts/CUADv1.json")
 
 # Step 2: Convert to documents
-docs = convert_to_documents(data, limit=3)
+docs = convert_to_documents(data, limit=20)
 
 print("Total docs:", len(docs))
 print("Sample doc:\n", docs[0].page_content[:300])
