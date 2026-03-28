@@ -8,6 +8,30 @@ from app.vectorstore import create_vectorstore
 from app.extract import extract_clause, get_llm, CLAUSE_TYPES
 
 # -------------------------------
+# FAITHFULNESS EVALUATION FUNCTION
+# -------------------------------
+def evaluate_faithfulness(context, answer, llm):
+    prompt = f"""
+You are an evaluator.
+
+Check if the answer is fully supported by the context.
+
+Context:
+{context}
+
+Answer:
+{answer}
+
+Score from 0 to 1:
+0 = completely incorrect
+1 = fully supported
+
+Return ONLY a number.
+"""
+    score = llm.invoke(prompt).content.strip()
+    return score
+
+# -------------------------------
 # SAMPLE CONTRACTS FUNCTION
 # -------------------------------
 @st.cache_data
@@ -114,6 +138,14 @@ Question:
 
         st.subheader("Answer")
         st.write(response.content)
+
+        # -------------------------------
+        # FAITHFULNESS SCORE DISPLAY
+        # -------------------------------
+        score = evaluate_faithfulness(context, response.content, llm)
+
+        st.subheader("Faithfulness Score")
+        st.write(score)
 
 # -------------------------------
 # CLAUSE EXTRACTION

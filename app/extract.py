@@ -31,7 +31,7 @@ def get_llm():
     )
 
 # -------------------------------
-# FEW-SHOT EXAMPLES
+# FEW-SHOT PROMPTING EXAMPLES
 # -------------------------------
 EXAMPLES = """
 Example 1:
