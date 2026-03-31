@@ -3,27 +3,25 @@
 An AI-powered system to analyze legal contracts using Retrieval-Augmented Generation (RAG).
 The system can extract clauses, answer questions, and detect risks from real-world legal contracts.
 
+---
+
 ## Features
 
-- Clause extraction (10 categories)
-- Natural language Q&A on contracts
-- Risk detection (legal issues identification)
-- Contract-specific analysis
-- Source location tracking (contract + paragraph)
-- Streamlit-based interactive UI
+- **Clause Extraction**: 10 distinct categories (Termination, Liability, etc.)
+- **Natural Language Q&A**: Context-aware answers based on contract text.
+- **Risk Detection**: Automatic identification of legal red flags.
+- **Source Tracking**: Every answer includes the specific contract and paragraph reference.
+- **Interactive UI**: Built with Streamlit for a seamless user experience.
 
-
+---
 
 ## Problem Statement
 
-Legal contracts are long and complex documents. Important clauses are often buried inside large text and expressed in different ways. Manual analysis is time-consuming and error-prone.
+Legal contracts are long and complex documents. Important clauses are often buried inside large text and expressed in different ways. Manual analysis is time-consuming and error-prone. 
 
-This system solves that by:
-- Extracting specific clauses automatically
-- Allowing users to ask questions in natural language
-- Identifying potential risks in contracts
+This system solves that by automating the extraction and analysis process, allowing legal professionals to focus on high-level decision-making.
 
-
+---
 
 ## Architecture Overview
 
