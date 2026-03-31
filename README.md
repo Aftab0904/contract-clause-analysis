@@ -27,14 +27,97 @@ This system solves that by automating the extraction and analysis process, allow
 
 ```mermaid
 flowchart TD
-    A[CUAD JSON Dataset] --> B[Document Loader - ingest.py]
-    B --> C[Chunking - chunk.py]
-    C --> D[Embeddings - HuggingFace]
-    D --> E[Vector Database - Chroma]
-    E --> F[Retriever - Similarity Search]
-    F --> G[LLM - Groq LLaMA]
-    G --> H[Clause Extraction / QA / Risk Detection]
-    H --> I[Streamlit UI - ui.py]
+
+    %% ----------------------
+    %% DATA LAYER
+    %% ----------------------
+    subgraph DATA_LAYER
+        A[CUAD Dataset]
+    end
+
+    %% ----------------------
+    %% INGESTION LAYER
+    %% ----------------------
+    subgraph INGESTION_LAYER
+        B[Load JSON<br>ingest.py]
+        C[Convert to Documents<br>ingest.py]
+    end
+
+    %% ----------------------
+    %% PROCESSING LAYER
+    %% ----------------------
+    subgraph PROCESSING_LAYER
+        D[Chunking Engine<br>chunk.py]
+    end
+
+    %% ----------------------
+    %% EMBEDDING + STORAGE
+    %% ----------------------
+    subgraph VECTOR_LAYER
+        E[Embedding Model<br>HuggingFace]
+        F[Vector Store<br>vectorstore.py]
+    end
+
+    %% ----------------------
+    %% RETRIEVAL LAYER
+    %% ----------------------
+    subgraph RETRIEVAL_LAYER
+        G[Similarity Search<br>Chroma Retriever]
+    end
+
+    %% ----------------------
+    %% REASONING LAYER
+    %% ----------------------
+    subgraph LLM_LAYER
+        H[LLM Engine<br>Groq - LLaMA]
+    end
+
+    %% ----------------------
+    %% APPLICATION LOGIC
+    %% ----------------------
+    subgraph APPLICATION_LAYER
+        I[Clause Extraction<br>extract.py]
+        J[Question Answering<br>ui.py]
+        K[Risk Detection<br>ui.py]
+    end
+
+    %% ----------------------
+    %% UI LAYER
+    %% ----------------------
+    subgraph UI_LAYER
+        L[Streamlit UI<br>ui.py]
+    end
+
+    %% FLOW
+    A --> B --> C --> D --> E --> F --> G --> H
+    H --> I
+    H --> J
+    H --> K
+    I --> L
+    J --> L
+    K --> L
+
+    %% ----------------------
+    %% STYLING
+    %% ----------------------
+    style A fill:#1f77b4,color:#fff
+
+    style B fill:#2ca02c,color:#fff
+    style C fill:#2ca02c,color:#fff
+    style D fill:#2ca02c,color:#fff
+
+    style E fill:#9467bd,color:#fff
+    style F fill:#9467bd,color:#fff
+
+    style G fill:#ff7f0e,color:#fff
+
+    style H fill:#d62728,color:#fff
+
+    style I fill:#17becf,color:#000
+    style J fill:#17becf,color:#000
+    style K fill:#17becf,color:#000
+
+    style L fill:#000000,color:#fff
 ```
 
 
