@@ -26,7 +26,7 @@ vectorstore = create_vectorstore(chunks)
 print("\nVector DB created successfully")
 
 # Test retrieval
-results = vectorstore.similarity_search("termination clause", k=2)
+results = vectorstore.similarity_search("termination clause", k=5)
 
 print("\nTop result:\n", results[0].page_content[:300])
 

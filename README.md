@@ -27,28 +27,16 @@ This system solves that by:
 
 ## Architecture Overview
 
-CUAD JSON Dataset  
-        |  
-        v  
-Document Loader (ingest.py)  
-        |  
-        v  
-Chunking (chunk.py)  
-        |  
-        v  
-Embeddings (HuggingFace)  
-        |  
-        v  
-Vector Database (Chroma)  
-        |  
-        v  
-Retriever (Similarity Search)  
-        |  
-        v  
-LLM (Groq - LLaMA)  
-        |  
-        v  
-Streamlit UI (ui.py)  
+```mermaid
+flowchart TD
+    A[CUAD JSON Dataset] --> B[Document Loader (ingest.py)]
+    B --> C[Chunking (chunk.py)]
+    C --> D[Embeddings (HuggingFace)]
+    D --> E[Vector Database (Chroma)]
+    E --> F[Retriever (Similarity Search)]
+    F --> G[LLM (Groq - LLaMA)]
+    G --> H[Clause Extraction / QA / Risk Detection]
+    H --> I[Streamlit UI (ui.py)]  
 
 
 ## How to Run
