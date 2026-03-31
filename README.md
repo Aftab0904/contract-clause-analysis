@@ -34,7 +34,8 @@ flowchart TD
     E --> F[Retriever - Similarity Search]
     F --> G[LLM - Groq LLaMA]
     G --> H[Clause Extraction / QA / Risk Detection]
-    H --> I[Streamlit UI - ui.py] ```
+    H --> I[Streamlit UI - ui.py]
+```
 
 
 ### How to Run
