@@ -4,7 +4,7 @@ An AI-powered system to analyze legal contracts using Retrieval-Augmented Genera
 The system can extract clauses, answer questions, and detect risks from real-world legal contracts.
 
 ---
-## Badges
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)  
 ![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)  
