@@ -6,12 +6,21 @@ The system can extract clauses, answer questions, and detect risks from real-wor
 ---
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)  
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)  
-![LangChain](https://img.shields.io/badge/RAG-LangChain-green)  
-![ChromaDB](https://img.shields.io/badge/VectorDB-Chroma-purple)  
-![LLM](https://img.shields.io/badge/LLM-Groq-orange)  
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Backend-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LangChain-RAG-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ChromaDB-VectorDB-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Groq-LLM-orange?style=for-the-badge" />
+</p>
+
+## Project Status
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Type-Production%20Project-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-RAG%20Systems-orange?style=for-the-badge" />
+</p>
 
 ## Demo
 
@@ -25,7 +34,7 @@ The system can extract clauses, answer questions, and detect risks from real-wor
   <img src="assets/riskdetection.png" width="45%" />
 </p>
 
-## ⚡ Features
+## Features
 
 | Feature | Description |
 |--------|------------|
