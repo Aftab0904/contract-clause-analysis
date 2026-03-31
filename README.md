@@ -29,14 +29,14 @@ This system solves that by:
 
 ```mermaid
 flowchart TD
-    A[CUAD JSON Dataset] --> B[Document Loader (ingest.py)]
-    B --> C[Chunking (chunk.py)]
-    C --> D[Embeddings (HuggingFace)]
-    D --> E[Vector Database (Chroma)]
-    E --> F[Retriever (Similarity Search)]
-    F --> G[LLM (Groq - LLaMA)]
+    A[CUAD JSON Dataset] --> B[Document Loader - ingest.py]
+    B --> C[Chunking - chunk.py]
+    C --> D[Embeddings - HuggingFace]
+    D --> E[Vector Database - Chroma]
+    E --> F[Retriever - Similarity Search]
+    F --> G[LLM - Groq LLaMA]
     G --> H[Clause Extraction / QA / Risk Detection]
-    H --> I[Streamlit UI (ui.py)]  
+    H --> I[Streamlit UI - ui.py] 
 
 
 ## How to Run
