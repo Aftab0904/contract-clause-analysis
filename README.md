@@ -22,18 +22,7 @@ The system can extract clauses, answer questions, and detect risks from real-wor
   <img src="https://img.shields.io/badge/Focus-RAG%20Systems-orange?style=for-the-badge" />
 </p>
 
-## Demo
-
-<p align="center">
-  <img src="assets/question.png" width="45%" />
-  <img src="assets/extract.png" width="45%" />
-</p>
-
-<p align="center">
-  <img src="assets/liability.png" width="45%" />
-  <img src="assets/riskdetection.png" width="45%" />
-</p>
-
+---
 ## Features
 
 | Feature | Description |
@@ -251,4 +240,17 @@ CUAD (Contract Understanding Atticus Dataset)
 ## Conclusion
 
 This project demonstrates how AI can simplify legal document analysis using RAG pipelines, enabling faster and more accurate contract understanding.
+
+---
+## Demo
+
+<p align="center">
+  <img src="assets/question.png" width="45%" />
+  <img src="assets/extract.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="assets/liability.png" width="45%" />
+  <img src="assets/riskdetection.png" width="45%" />
+</p>
 
