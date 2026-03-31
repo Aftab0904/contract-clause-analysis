@@ -4,14 +4,36 @@ An AI-powered system to analyze legal contracts using Retrieval-Augmented Genera
 The system can extract clauses, answer questions, and detect risks from real-world legal contracts.
 
 ---
+## Badges
 
-## Features
+![Python](https://img.shields.io/badge/Python-3.10-blue)  
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)  
+![LangChain](https://img.shields.io/badge/RAG-LangChain-green)  
+![ChromaDB](https://img.shields.io/badge/VectorDB-Chroma-purple)  
+![LLM](https://img.shields.io/badge/LLM-Groq-orange)  
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-- **Clause Extraction**: 10 distinct categories (Termination, Liability, etc.)
-- **Natural Language Q&A**: Context-aware answers based on contract text.
-- **Risk Detection**: Automatic identification of legal red flags.
-- **Source Tracking**: Every answer includes the specific contract and paragraph reference.
-- **Interactive UI**: Built with Streamlit for a seamless user experience.
+## Demo
+
+<p align="center">
+  <img src="assets/question.png" width="45%" />
+  <img src="assets/extract.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="assets/liability.png" width="45%" />
+  <img src="assets/riskdetection.png" width="45%" />
+</p>
+
+## ⚡ Features
+
+| Feature | Description |
+|--------|------------|
+| Clause Extraction | Extract 10+ legal clause categories |
+| Q&A | Ask natural language questions |
+| Risk Detection | Identify legal red flags |
+| Source Tracking | Exact paragraph reference |
+| Interactive UI | Streamlit-based interface |
 
 ---
 
@@ -208,14 +230,16 @@ CUAD (Contract Understanding Atticus Dataset)
 - 41 clause categories  
 - Sourced from SEC EDGAR filings  
 
+---
+## Key Learnings
 
+- RAG system design  
+- Prompt engineering  
+- Retrieval optimization  
+- LLM evaluation techniques  
+
+---
 ## Conclusion
 
 This project demonstrates how AI can simplify legal document analysis using RAG pipelines, enabling faster and more accurate contract understanding.
 
-## Demo Images
-
-![UI](assets/question.png)
-![Extraction](assets/extract.png)
-![Liability](assets/liability.png)
-![RiskDetection](assets/riskdetection.png)
